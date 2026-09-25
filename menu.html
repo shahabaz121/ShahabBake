@@ -1,0 +1,1485 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Menu - ShabazBake</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" />
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+  <header class="navbar">
+    <a href="index.html" class="logo">ShabazBake</a>
+    <button class="menu-toggle" id="menuToggle" aria-label="Open navigation">
+      <i class="bi bi-list"></i>
+    </button>
+    <nav id="mainNav">
+      <a href="index.html"><i class="bi bi-house"></i> Home</a>
+      <a href="menu.html"><i class="bi bi-grid-3x3-gap"></i> Menu</a>
+      <a href="about.html"><i class="bi bi-info-circle"></i> About</a>
+      <a href="contact.html"><i class="bi bi-telephone"></i> Contact</a>
+      <a href="account.html"><i class="bi bi-person"></i> Account</a>
+      <a href="cart.html"><i class="bi bi-cart3"></i> Cart <span id="cartCount">0</span></a>
+      <a href="menu.html" class="order-link"><i class="bi bi-bag-check"></i> Order Now</a>
+    </nav>
+  </header>
+
+  <section class="page-banner">
+    <div>
+      <span class="eyebrow"><i class="bi bi-cake2"></i> Fresh From Our Oven</span>
+      <h1>Our Menu</h1>
+      <p>Choose from cakes, pastries, breads, cookies, desserts and beverages.</p>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="menu-tools">
+      <div class="search-box">
+        <i class="bi bi-search"></i>
+        <input type="text" id="searchInput" placeholder="Search menu items" />
+      </div>
+
+      <div class="categories">
+        <button class="category-btn active" data-filter="all">All</button>
+        <button class="category-btn" data-filter="cakes">Cakes</button>
+        <button class="category-btn" data-filter="pastries">Pastries</button>
+        <button class="category-btn" data-filter="breads">Breads</button>
+        <button class="category-btn" data-filter="cookies">Cookies</button>
+        <button class="category-btn" data-filter="desserts">Desserts</button>
+        <button class="category-btn" data-filter="beverages">Beverages</button>
+      </div>
+    </div>
+
+    <div class="product-grid" id="productGrid">
+      <article class="product-card cakes">
+        <img src="https://images.unsplash.com/photo-1578985545062-69928b1d9587?auto=format&fit=crop&w=900&q=80" alt="Chocolate Truffle Cake" />
+        <div class="product-info">
+          <span class="product-category">Cakes</span>
+          <h3 class="product-name">Chocolate Truffle Cake</h3>
+          <p>Rich chocolate cake with smooth chocolate ganache.</p>
+          <div class="product-bottom">
+            <strong class="product-price">₹699</strong>
+            <button class="add-btn"><i class="bi bi-cart-plus"></i> Add</button>
+          </div>
+        </div>
+      </article>
+
+      <article class="product-card cakes">
+        <img src="https://images.unsplash.com/photo-1565958011703-44f9829ba187?auto=format&fit=crop&w=900&q=80" alt="Red Velvet Cake" />
+        <div class="product-info">
+          <span class="product-category">Cakes</span>
+          <h3 class="product-name">Red Velvet Cake</h3>
+          <p>Soft red velvet sponge with creamy frosting.</p>
+          <div class="product-bottom">
+            <strong class="product-price">₹749</strong>
+            <button class="add-btn"><i class="bi bi-cart-plus"></i> Add</button>
+          </div>
+        </div>
+      </article>
+
+      <article class="product-card cakes">
+        <img src="https://images.unsplash.com/photo-1571115177098-24ec42ed204d?auto=format&fit=crop&w=900&q=80" alt="Black Forest Cake" />
+        <div class="product-info">
+          <span class="product-category">Cakes</span>
+          <h3 class="product-name">Black Forest Cake</h3>
+          <p>Chocolate cake with cream and cherries.</p>
+          <div class="product-bottom">
+            <strong class="product-price">₹699</strong>
+            <button class="add-btn"><i class="bi bi-cart-plus"></i> Add</button>
+          </div>
+        </div>
+      </article>
+
+      <article class="product-card cakes">
+        <img src="https://images.unsplash.com/photo-1464349095431-e9a21285b5f3?auto=format&fit=crop&w=900&q=80" alt="Vanilla Celebration Cake" />
+        <div class="product-info">
+          <span class="product-category">Cakes</span>
+          <h3 class="product-name">Vanilla Celebration Cake</h3>
+          <p>Light vanilla sponge with fresh cream.</p>
+          <div class="product-bottom">
+            <strong class="product-price">₹599</strong>
+            <button class="add-btn"><i class="bi bi-cart-plus"></i> Add</button>
+          </div>
+        </div>
+      </article>
+
+      <article class="product-card pastries">
+        <img src="https://images.unsplash.com/photo-1509440159596-0249088772ff?auto=format&fit=crop&w=900&q=80" alt="Butter Croissant" />
+        <div class="product-info">
+          <span class="product-category">Pastries</span>
+          <h3 class="product-name">Butter Croissant</h3>
+          <p>Golden flaky pastry baked fresh every morning.</p>
+          <div class="product-bottom">
+            <strong class="product-price">₹249</strong>
+            <button class="add-btn"><i class="bi bi-cart-plus"></i> Add</button>
+          </div>
+        </div>
+      </article>
+
+      <article class="product-card pastries">
+        <img src="https://images.unsplash.com/photo-1555507036-ab1f4038808a?auto=format&fit=crop&w=900&q=80" alt="Almond Danish" />
+        <div class="product-info">
+          <span class="product-category">Pastries</span>
+          <h3 class="product-name">Almond Danish</h3>
+          <p>Buttery layers topped with almonds and glaze.</p>
+          <div class="product-bottom">
+            <strong class="product-price">₹279</strong>
+            <button class="add-btn"><i class="bi bi-cart-plus"></i> Add</button>
+          </div>
+        </div>
+      </article>
+
+      <article class="product-card breads">
+        <img src="https://images.unsplash.com/photo-1509440159596-0249088772ff?auto=format&fit=crop&w=900&q=80" alt="Sourdough Loaf" />
+        <div class="product-info">
+          <span class="product-category">Breads</span>
+          <h3 class="product-name">Sourdough Loaf</h3>
+          <p>Slow-fermented artisan loaf with a crisp crust.</p>
+          <div class="product-bottom">
+            <strong class="product-price">₹349</strong>
+            <button class="add-btn"><i class="bi bi-cart-plus"></i> Add</button>
+          </div>
+        </div>
+      </article>
+
+      <article class="product-card breads">
+        <img src="https://images.unsplash.com/photo-1504674900247-0877df9cc836?auto=format&fit=crop&w=900&q=80" alt="Garlic Bread" />
+        <div class="product-info">
+          <span class="product-category">Breads</span>
+          <h3 class="product-name">Garlic Bread</h3>
+          <p>Warm, toasted bread brushed with garlic butter.</p>
+          <div class="product-bottom">
+            <strong class="product-price">₹299</strong>
+            <button class="add-btn"><i class="bi bi-cart-plus"></i> Add</button>
+          </div>
+        </div>
+      </article>
+
+      <article class="product-card cookies">
+        <img src="https://images.unsplash.com/photo-1499636136210-6f4ee915583e?auto=format&fit=crop&w=900&q=80" alt="Chocolate Chip Cookies" />
+        <div class="product-info">
+          <span class="product-category">Cookies</span>
+          <h3 class="product-name">Chocolate Chip Cookies</h3>
+          <p>Classic chewy cookies packed with chocolate chunks.</p>
+          <div class="product-bottom">
+            <strong class="product-price">₹199</strong>
+            <button class="add-btn"><i class="bi bi-cart-plus"></i> Add</button>
+          </div>
+        </div>
+      </article>
+
+      <article class="product-card cookies">
+        <img src="https://images.unsplash.com/photo-1558961363-fa8fdf82db35?auto=format&fit=crop&w=900&q=80" alt="Oat Almond Cookies" />
+        <div class="product-info">
+          <span class="product-category">Cookies</span>
+          <h3 class="product-name">Oat Almond Cookies</h3>
+          <p>Nutty, wholesome cookies with a soft center.</p>
+          <div class="product-bottom">
+            <strong class="product-price">₹219</strong>
+            <button class="add-btn"><i class="bi bi-cart-plus"></i> Add</button>
+          </div>
+        </div>
+      </article>
+
+      <article class="product-card desserts">
+        <img src="https://images.unsplash.com/photo-1551024601-bec78aea704b?auto=format&fit=crop&w=900&q=80" alt="Cheesecake Slice" />
+        <div class="product-info">
+          <span class="product-category">Desserts</span>
+          <h3 class="product-name">Classic Cheesecake</h3>
+          <p>Creamy cheesecake with a buttery biscuit base.</p>
+          <div class="product-bottom">
+            <strong class="product-price">₹399</strong>
+            <button class="add-btn"><i class="bi bi-cart-plus"></i> Add</button>
+          </div>
+        </div>
+      </article>
+
+      <article class="product-card desserts">
+        <img src="https://images.unsplash.com/photo-1488477181946-6428a0291777?auto=format&fit=crop&w=900&q=80" alt="Brownie Fudge" />
+        <div class="product-info">
+          <span class="product-category">Desserts</span>
+          <h3 class="product-name">Brownie Fudge</h3>
+          <p>Dense, rich chocolate brownie with a soft crumb.</p>
+          <div class="product-bottom">
+            <strong class="product-price">₹329</strong>
+            <button class="add-btn"><i class="bi bi-cart-plus"></i> Add</button>
+          </div>
+        </div>
+      </article>
+
+      <article class="product-card beverages">
+        <img src="https://images.unsplash.com/photo-1495474472287-4d71bcdd2085?auto=format&fit=crop&w=900&q=80" alt="Iced Cappuccino" />
+        <div class="product-info">
+          <span class="product-category">Beverages</span>
+          <h3 class="product-name">Iced Cappuccino</h3>
+          <p>Cold coffee with whipped cream and cocoa dust.</p>
+          <div class="product-bottom">
+            <strong class="product-price">₹219</strong>
+            <button class="add-btn"><i class="bi bi-cart-plus"></i> Add</button>
+          </div>
+        </div>
+      </article>
+
+      <article class="product-card beverages">
+        <img src="https://images.unsplash.com/photo-1517701604599-bb29b565090c?auto=format&fit=crop&w=900&q=80" alt="Fresh Lemonade" />
+        <div class="product-info">
+          <span class="product-category">Beverages</span>
+          <h3 class="product-name">Fresh Lemonade</h3>
+          <p>Refreshing citrus drink with mint and sparkle.</p>
+          <div class="product-bottom">
+            <strong class="product-price">₹189</strong>
+            <button class="add-btn"><i class="bi bi-cart-plus"></i> Add</button>
+          </div>
+        </div>
+      </article>
+    </div>
+
+    <p id="noProducts" hidden>No products match your search.</p>
+  </section>
+
+  <footer class="footer">
+    <div class="footer-inner">
+      <div>
+        <h2>ShabazBake</h2>
+        <p>Freshly baked happiness, made with love.</p>
+        <div class="social-links">
+          <a href="https://www.instagram.com/sabad._/" aria-label="Instagram"><i class="bi bi-instagram"></i></a>
+          <a href="https://facebook.com" aria-label="Facebook"><i class="bi bi-facebook"></i></a>
+          <a href="https://wa.me/919876543210" aria-label="WhatsApp"><i class="bi bi-whatsapp"></i></a>
+          <a href="https://youtube.com" aria-label="YouTube"><i class="bi bi-youtube"></i></a>
+        </div>
+      </div>
+      <div class="footer-links">
+        <a href="index.html">Home</a>
+        <a href="menu.html">Menu</a>
+        <a href="about.html">About</a>
+        <a href="contact.html">Contact</a>
+        <a href="account.html">Account</a>
+      </div>
+      <div>
+        <p>Mangalore, Karnataka, India</p>
+        <p>+91 98765 43210</p>
+        <p>hello@shabazbake.com</p>
+      </div>
+    </div>
+    <p class="copyright">&copy; 2026 ShabazBake. All Rights Reserved.</p>
+  </footer>
+
+  <div class="toast-box"></div>
+  <script src="js/script.js"></script>
+</body>
+</html>
+
+
+            <div class="product-info">
+
+                <span class="product-category">
+                    Cakes
+                </span>
+
+                <h3 class="product-name">
+                    Chocolate Fudge Cake
+                </h3>
+
+                <p>
+                    Moist chocolate cake
+                    with rich fudge.
+                </p>
+
+
+                <div class="product-bottom">
+
+                    <strong class="product-price">
+                        ₹749
+                    </strong>
+
+                    <button class="add-btn">
+                        <i class="bi bi-cart-plus"></i>
+                        Add
+                    </button>
+
+                </div>
+
+            </div>
+
+        </article>
+
+
+
+        <!-- 8 -->
+
+        <article class="product-card cakes">
+
+            <img
+                src="https://images.unsplash.com/photo-1535141192574-5d4897c12636?auto=format&fit=crop&w=900&q=80"
+                alt="Birthday Cake">
+
+
+            <div class="product-info">
+
+                <span class="product-category">
+                    Cakes
+                </span>
+
+                <h3 class="product-name">
+                    Rainbow Birthday Cake
+                </h3>
+
+                <p>
+                    Colourful layered cake
+                    for celebrations.
+                </p>
+
+
+                <div class="product-bottom">
+
+                    <strong class="product-price">
+                        ₹899
+                    </strong>
+
+                    <button class="add-btn">
+                        <i class="bi bi-cart-plus"></i>
+                        Add
+                    </button>
+
+                </div>
+
+            </div>
+
+        </article>
+
+
+
+        <!-- 9 -->
+
+        <article class="product-card pastries">
+
+            <img
+                src="https://images.unsplash.com/photo-1555507036-ab1f4038808a?auto=format&fit=crop&w=900&q=80"
+                alt="Butter Croissant">
+
+
+            <div class="product-info">
+
+                <span class="product-category">
+                    Pastries
+                </span>
+
+                <h3 class="product-name">
+                    Butter Croissant
+                </h3>
+
+                <p>
+                    Flaky golden croissant
+                    made with butter.
+                </p>
+
+
+                <div class="product-bottom">
+
+                    <strong class="product-price">
+                        ₹120
+                    </strong>
+
+                    <button class="add-btn">
+                        <i class="bi bi-cart-plus"></i>
+                        Add
+                    </button>
+
+                </div>
+
+            </div>
+
+        </article>
+
+
+
+        <!-- 10 -->
+
+        <article class="product-card pastries">
+
+            <img
+                src="https://images.unsplash.com/photo-1623334044303-241021148842?auto=format&fit=crop&w=900&q=80"
+                alt="Chocolate Croissant">
+
+
+            <div class="product-info">
+
+                <span class="product-category">
+                    Pastries
+                </span>
+
+                <h3 class="product-name">
+                    Chocolate Croissant
+                </h3>
+
+                <p>
+                    Crispy pastry filled
+                    with chocolate.
+                </p>
+
+
+                <div class="product-bottom">
+
+                    <strong class="product-price">
+                        ₹150
+                    </strong>
+
+                    <button class="add-btn">
+                        <i class="bi bi-cart-plus"></i>
+                        Add
+                    </button>
+
+                </div>
+
+            </div>
+
+        </article>
+
+
+
+        <!-- 11 -->
+
+        <article class="product-card pastries">
+
+            <img
+                src="https://images.unsplash.com/photo-1509440159596-0249088772ff?auto=format&fit=crop&w=900&q=80"
+                alt="Cinnamon Roll">
+
+
+            <div class="product-info">
+
+                <span class="product-category">
+                    Pastries
+                </span>
+
+                <h3 class="product-name">
+                    Cinnamon Roll
+                </h3>
+
+                <p>
+                    Soft cinnamon roll
+                    with sweet glaze.
+                </p>
+
+
+                <div class="product-bottom">
+
+                    <strong class="product-price">
+                        ₹140
+                    </strong>
+
+                    <button class="add-btn">
+                        <i class="bi bi-cart-plus"></i>
+                        Add
+                    </button>
+
+                </div>
+
+            </div>
+
+        </article>
+
+
+
+        <!-- 12 -->
+
+        <article class="product-card pastries">
+
+            <img
+                src="https://images.unsplash.com/photo-1558961363-fa8fdf82db35?auto=format&fit=crop&w=900&q=80"
+                alt="Strawberry Danish">
+
+
+            <div class="product-info">
+
+                <span class="product-category">
+                    Pastries
+                </span>
+
+                <h3 class="product-name">
+                    Strawberry Danish
+                </h3>
+
+                <p>
+                    Flaky Danish pastry
+                    with strawberry filling.
+                </p>
+
+
+                <div class="product-bottom">
+
+                    <strong class="product-price">
+                        ₹160
+                    </strong>
+
+                    <button class="add-btn">
+                        <i class="bi bi-cart-plus"></i>
+                        Add
+                    </button>
+
+                </div>
+
+            </div>
+
+        </article>
+
+
+
+        <!-- 13 -->
+
+        <article class="product-card pastries">
+
+            <img
+                src="https://images.unsplash.com/photo-1551024601-bec78aea704b?auto=format&fit=crop&w=900&q=80"
+                alt="Cream Puff">
+
+
+            <div class="product-info">
+
+                <span class="product-category">
+                    Pastries
+                </span>
+
+                <h3 class="product-name">
+                    Cream Puff
+                </h3>
+
+                <p>
+                    Light pastry filled
+                    with vanilla cream.
+                </p>
+
+
+                <div class="product-bottom">
+
+                    <strong class="product-price">
+                        ₹130
+                    </strong>
+
+                    <button class="add-btn">
+                        <i class="bi bi-cart-plus"></i>
+                        Add
+                    </button>
+
+                </div>
+
+            </div>
+
+        </article>
+
+
+
+        <!-- 14 -->
+
+        <article class="product-card pastries">
+
+            <img
+                src="https://images.unsplash.com/photo-1551024506-0bccd828d307?auto=format&fit=crop&w=900&q=80"
+                alt="Glazed Donut">
+
+
+            <div class="product-info">
+
+                <span class="product-category">
+                    Pastries
+                </span>
+
+                <h3 class="product-name">
+                    Glazed Donut
+                </h3>
+
+                <p>
+                    Soft donut with a
+                    sweet glazed topping.
+                </p>
+
+
+                <div class="product-bottom">
+
+                    <strong class="product-price">
+                        ₹90
+                    </strong>
+
+                    <button class="add-btn">
+                        <i class="bi bi-cart-plus"></i>
+                        Add
+                    </button>
+
+                </div>
+
+            </div>
+
+        </article>
+
+
+
+        <!-- 15 -->
+
+        <article class="product-card breads">
+
+            <img
+                src="https://images.unsplash.com/photo-1509440159596-0249088772ff?auto=format&fit=crop&w=900&q=80"
+                alt="Milk Bread">
+
+
+            <div class="product-info">
+
+                <span class="product-category">
+                    Breads
+                </span>
+
+                <h3 class="product-name">
+                    Milk Bread
+                </h3>
+
+                <p>
+                    Soft and fresh bakery
+                    milk bread.
+                </p>
+
+
+                <div class="product-bottom">
+
+                    <strong class="product-price">
+                        ₹80
+                    </strong>
+
+                    <button class="add-btn">
+                        <i class="bi bi-cart-plus"></i>
+                        Add
+                    </button>
+
+                </div>
+
+            </div>
+
+        </article>
+
+
+
+        <!-- 16 -->
+
+        <article class="product-card breads">
+
+            <img
+                src="https://images.unsplash.com/photo-1549931319-a545dcf3bc73?auto=format&fit=crop&w=900&q=80"
+                alt="French Baguette">
+
+
+            <div class="product-info">
+
+                <span class="product-category">
+                    Breads
+                </span>
+
+                <h3 class="product-name">
+                    French Baguette
+                </h3>
+
+                <p>
+                    Crispy crust with a
+                    soft centre.
+                </p>
+
+
+                <div class="product-bottom">
+
+                    <strong class="product-price">
+                        ₹120
+                    </strong>
+
+                    <button class="add-btn">
+                        <i class="bi bi-cart-plus"></i>
+                        Add
+                    </button>
+
+                </div>
+
+            </div>
+
+        </article>
+
+
+
+        <!-- 17 -->
+
+        <article class="product-card breads">
+
+            <img
+                src="https://images.unsplash.com/photo-1509440159596-0249088772ff?auto=format&fit=crop&w=900&q=80"
+                alt="Garlic Bread">
+
+
+            <div class="product-info">
+
+                <span class="product-category">
+                    Breads
+                </span>
+
+                <h3 class="product-name">
+                    Garlic Bread
+                </h3>
+
+                <p>
+                    Fresh bread with
+                    garlic butter and herbs.
+                </p>
+
+
+                <div class="product-bottom">
+
+                    <strong class="product-price">
+                        ₹150
+                    </strong>
+
+                    <button class="add-btn">
+                        <i class="bi bi-cart-plus"></i>
+                        Add
+                    </button>
+
+                </div>
+
+            </div>
+
+        </article>
+
+
+
+        <!-- 18 -->
+
+        <article class="product-card breads">
+
+            <img
+                src="https://images.unsplash.com/photo-1547592180-85f173990554?auto=format&fit=crop&w=900&q=80"
+                alt="Multigrain Bread">
+
+
+            <div class="product-info">
+
+                <span class="product-category">
+                    Breads
+                </span>
+
+                <h3 class="product-name">
+                    Multigrain Bread
+                </h3>
+
+                <p>
+                    Bread made with
+                    mixed grains.
+                </p>
+
+
+                <div class="product-bottom">
+
+                    <strong class="product-price">
+                        ₹110
+                    </strong>
+
+                    <button class="add-btn">
+                        <i class="bi bi-cart-plus"></i>
+                        Add
+                    </button>
+
+                </div>
+
+            </div>
+
+        </article>
+
+
+
+        <!-- 19 -->
+
+        <article class="product-card breads">
+
+            <img
+                src="https://images.unsplash.com/photo-1586444248902-2f64eddc13df?auto=format&fit=crop&w=900&q=80"
+                alt="Cheese Bread">
+
+
+            <div class="product-info">
+
+                <span class="product-category">
+                    Breads
+                </span>
+
+                <h3 class="product-name">
+                    Cheese Bread
+                </h3>
+
+                <p>
+                    Soft bread filled
+                    with creamy cheese.
+                </p>
+
+
+                <div class="product-bottom">
+
+                    <strong class="product-price">
+                        ₹140
+                    </strong>
+
+                    <button class="add-btn">
+                        <i class="bi bi-cart-plus"></i>
+                        Add
+                    </button>
+
+                </div>
+
+            </div>
+
+        </article>
+
+
+
+        <!-- 20 -->
+
+        <article class="product-card cookies">
+
+            <img
+                src="https://images.unsplash.com/photo-1499636136210-6f4ee915583e?auto=format&fit=crop&w=900&q=80"
+                alt="Chocolate Chip Cookies">
+
+
+            <div class="product-info">
+
+                <span class="product-category">
+                    Cookies
+                </span>
+
+                <h3 class="product-name">
+                    Chocolate Chip Cookies
+                </h3>
+
+                <p>
+                    Crunchy cookies with
+                    chocolate chips.
+                </p>
+
+
+                <div class="product-bottom">
+
+                    <strong class="product-price">
+                        ₹180
+                    </strong>
+
+                    <button class="add-btn">
+                        <i class="bi bi-cart-plus"></i>
+                        Add
+                    </button>
+
+                </div>
+
+            </div>
+
+        </article>
+
+
+
+        <!-- 21 -->
+
+        <article class="product-card cookies">
+
+            <img
+                src="https://images.unsplash.com/photo-1558961363-fa8fdf82db35?auto=format&fit=crop&w=900&q=80"
+                alt="Butter Cookies">
+
+
+            <div class="product-info">
+
+                <span class="product-category">
+                    Cookies
+                </span>
+
+                <h3 class="product-name">
+                    Butter Cookies
+                </h3>
+
+                <p>
+                    Classic buttery cookies
+                    with a crisp texture.
+                </p>
+
+
+                <div class="product-bottom">
+
+                    <strong class="product-price">
+                        ₹160
+                    </strong>
+
+                    <button class="add-btn">
+                        <i class="bi bi-cart-plus"></i>
+                        Add
+                    </button>
+
+                </div>
+
+            </div>
+
+        </article>
+
+
+
+        <!-- 22 -->
+
+        <article class="product-card cookies">
+
+            <img
+                src="https://images.unsplash.com/photo-1590080875515-8a3a8dc5735e?auto=format&fit=crop&w=900&q=80"
+                alt="Oatmeal Cookies">
+
+
+            <div class="product-info">
+
+                <span class="product-category">
+                    Cookies
+                </span>
+
+                <h3 class="product-name">
+                    Oatmeal Cookies
+                </h3>
+
+                <p>
+                    Golden oatmeal cookies
+                    with homemade taste.
+                </p>
+
+
+                <div class="product-bottom">
+
+                    <strong class="product-price">
+                        ₹170
+                    </strong>
+
+                    <button class="add-btn">
+                        <i class="bi bi-cart-plus"></i>
+                        Add
+                    </button>
+
+                </div>
+
+            </div>
+
+        </article>
+
+
+
+        <!-- 23 -->
+
+        <article class="product-card cookies">
+
+            <img
+                src="https://images.unsplash.com/photo-1558961363-fa8fdf82db35?auto=format&fit=crop&w=900&q=80"
+                alt="Double Chocolate Cookies">
+
+
+            <div class="product-info">
+
+                <span class="product-category">
+                    Cookies
+                </span>
+
+                <h3 class="product-name">
+                    Double Chocolate Cookies
+                </h3>
+
+                <p>
+                    Soft chocolate cookies
+                    packed with chocolate.
+                </p>
+
+
+                <div class="product-bottom">
+
+                    <strong class="product-price">
+                        ₹200
+                    </strong>
+
+                    <button class="add-btn">
+                        <i class="bi bi-cart-plus"></i>
+                        Add
+                    </button>
+
+                </div>
+
+            </div>
+
+        </article>
+
+
+
+        <!-- 24 -->
+
+        <article class="product-card desserts">
+
+            <img
+                src="https://images.unsplash.com/photo-1533134242443-d4fd215305ad?auto=format&fit=crop&w=900&q=80"
+                alt="New York Cheesecake">
+
+
+            <div class="product-info">
+
+                <span class="product-category">
+                    Desserts
+                </span>
+
+                <h3 class="product-name">
+                    New York Cheesecake
+                </h3>
+
+                <p>
+                    Creamy cheesecake with
+                    a smooth biscuit base.
+                </p>
+
+
+                <div class="product-bottom">
+
+                    <strong class="product-price">
+                        ₹280
+                    </strong>
+
+                    <button class="add-btn">
+                        <i class="bi bi-cart-plus"></i>
+                        Add
+                    </button>
+
+                </div>
+
+            </div>
+
+        </article>
+
+
+
+        <!-- 25 -->
+
+        <article class="product-card desserts">
+
+            <img
+                src="https://images.unsplash.com/photo-1564355808539-22fda35bed7e?auto=format&fit=crop&w=900&q=80"
+                alt="Chocolate Brownie">
+
+
+            <div class="product-info">
+
+                <span class="product-category">
+                    Desserts
+                </span>
+
+                <h3 class="product-name">
+                    Chocolate Brownie
+                </h3>
+
+                <p>
+                    Soft fudgy chocolate
+                    brownie.
+                </p>
+
+
+                <div class="product-bottom">
+
+                    <strong class="product-price">
+                        ₹150
+                    </strong>
+
+                    <button class="add-btn">
+                        <i class="bi bi-cart-plus"></i>
+                        Add
+                    </button>
+
+                </div>
+
+            </div>
+
+        </article>
+
+
+
+        <!-- 26 -->
+
+        <article class="product-card desserts">
+
+            <img
+                src="https://images.unsplash.com/photo-1565958011703-44f9829ba187?auto=format&fit=crop&w=900&q=80"
+                alt="Strawberry Cheesecake">
+
+
+            <div class="product-info">
+
+                <span class="product-category">
+                    Desserts
+                </span>
+
+                <h3 class="product-name">
+                    Strawberry Cheesecake
+                </h3>
+
+                <p>
+                    Creamy cheesecake topped
+                    with strawberry.
+                </p>
+
+
+                <div class="product-bottom">
+
+                    <strong class="product-price">
+                        ₹300
+                    </strong>
+
+                    <button class="add-btn">
+                        <i class="bi bi-cart-plus"></i>
+                        Add
+                    </button>
+
+                </div>
+
+            </div>
+
+        </article>
+
+
+
+        <!-- 27 -->
+
+        <article class="product-card desserts">
+
+            <img
+                src="https://images.unsplash.com/photo-1501443762994-82bd5dace89a?auto=format&fit=crop&w=900&q=80"
+                alt="Vanilla Ice Cream">
+
+
+            <div class="product-info">
+
+                <span class="product-category">
+                    Desserts
+                </span>
+
+                <h3 class="product-name">
+                    Vanilla Ice Cream
+                </h3>
+
+                <p>
+                    Smooth and creamy
+                    vanilla ice cream.
+                </p>
+
+
+                <div class="product-bottom">
+
+                    <strong class="product-price">
+                        ₹120
+                    </strong>
+
+                    <button class="add-btn">
+                        <i class="bi bi-cart-plus"></i>
+                        Add
+                    </button>
+
+                </div>
+
+            </div>
+
+        </article>
+
+
+
+        <!-- 28 -->
+
+        <article class="product-card beverages">
+
+            <img
+                src="https://images.unsplash.com/photo-1495474472287-4d71bcdd2085?auto=format&fit=crop&w=900&q=80"
+                alt="Cappuccino">
+
+
+            <div class="product-info">
+
+                <span class="product-category">
+                    Beverages
+                </span>
+
+                <h3 class="product-name">
+                    Cappuccino
+                </h3>
+
+                <p>
+                    Fresh coffee with
+                    creamy foam.
+                </p>
+
+
+                <div class="product-bottom">
+
+                    <strong class="product-price">
+                        ₹140
+                    </strong>
+
+                    <button class="add-btn">
+                        <i class="bi bi-cart-plus"></i>
+                        Add
+                    </button>
+
+                </div>
+
+            </div>
+
+        </article>
+
+
+
+        <!-- 29 -->
+
+        <article class="product-card beverages">
+
+            <img
+                src="https://images.unsplash.com/photo-1509042239860-f550ce710b93?auto=format&fit=crop&w=900&q=80"
+                alt="Cold Coffee">
+
+
+            <div class="product-info">
+
+                <span class="product-category">
+                    Beverages
+                </span>
+
+                <h3 class="product-name">
+                    Cold Coffee
+                </h3>
+
+                <p>
+                    Chilled creamy coffee
+                    served cold.
+                </p>
+
+
+                <div class="product-bottom">
+
+                    <strong class="product-price">
+                        ₹160
+                    </strong>
+
+                    <button class="add-btn">
+                        <i class="bi bi-cart-plus"></i>
+                        Add
+                    </button>
+
+                </div>
+
+            </div>
+
+        </article>
+
+
+
+        <!-- 30 -->
+
+        <article class="product-card beverages">
+
+            <img
+                src="https://images.unsplash.com/photo-1572490122747-3968b75cc699?auto=format&fit=crop&w=900&q=80"
+                alt="Chocolate Milkshake">
+
+
+            <div class="product-info">
+
+                <span class="product-category">
+                    Beverages
+                </span>
+
+                <h3 class="product-name">
+                    Chocolate Milkshake
+                </h3>
+
+                <p>
+                    Thick and creamy
+                    chocolate milkshake.
+                </p>
+
+
+                <div class="product-bottom">
+
+                    <strong class="product-price">
+                        ₹190
+                    </strong>
+
+                    <button class="add-btn">
+                        <i class="bi bi-cart-plus"></i>
+                        Add
+                    </button>
+
+                </div>
+
+            </div>
+
+        </article>
+
+        <!-- 31 -->
+        <article class="product-card beverages">
+            <img src="https://images.unsplash.com/photo-1461023058943-07fcbe16d735?auto=format&fit=crop&w=900&q=80" alt="Iced Tea">
+            <div class="product-info">
+                <span class="product-category">Beverages</span>
+                <h3 class="product-name">Iced Tea</h3>
+                <p>Refreshing chilled tea with citrus and mint.</p>
+                <div class="product-bottom"><strong class="product-price">₹110</strong><button class="add-btn" type="button"><i class="bi bi-cart-plus"></i> Add</button></div>
+            </div>
+        </article>
+
+        <!-- 32 -->
+        <article class="product-card beverages">
+            <img src="https://images.unsplash.com/photo-1542990253-0d0f5be5f0ed?auto=format&fit=crop&w=900&q=80" alt="Hot Chocolate">
+            <div class="product-info">
+                <span class="product-category">Beverages</span>
+                <h3 class="product-name">Hot Chocolate</h3>
+                <p>Warm cocoa topped with soft whipped cream.</p>
+                <div class="product-bottom"><strong class="product-price">₹150</strong><button class="add-btn" type="button"><i class="bi bi-cart-plus"></i> Add</button></div>
+            </div>
+        </article>
+
+        <!-- 33 -->
+        <article class="product-card beverages">
+            <img src="https://images.unsplash.com/photo-1579954115545-a95591f28bfc?auto=format&fit=crop&w=900&q=80" alt="Strawberry Milkshake">
+            <div class="product-info">
+                <span class="product-category">Beverages</span>
+                <h3 class="product-name">Strawberry Milkshake</h3>
+                <p>Creamy strawberry milkshake with fresh berries.</p>
+                <div class="product-bottom"><strong class="product-price">₹180</strong><button class="add-btn" type="button"><i class="bi bi-cart-plus"></i> Add</button></div>
+            </div>
+        </article>
+
+        <!-- 34 -->
+        <article class="product-card cakes">
+            <img src="https://images.unsplash.com/photo-1558301211-0d8c8ddee6ec?auto=format&fit=crop&w=900&q=80" alt="Butterscotch Cake">
+            <div class="product-info">
+                <span class="product-category">Cakes</span>
+                <h3 class="product-name">Butterscotch Cake</h3>
+                <p>Golden butterscotch crunch with vanilla sponge.</p>
+                <div class="product-bottom"><strong class="product-price">₹749</strong><button class="add-btn" type="button"><i class="bi bi-cart-plus"></i> Add</button></div>
+            </div>
+        </article>
+
+        <!-- 35 -->
+        <article class="product-card pastries">
+            <img src="https://images.unsplash.com/photo-1555507036-ab1f4038808a?auto=format&fit=crop&w=900&q=80" alt="Fruit Pastry">
+            <div class="product-info">
+                <span class="product-category">Pastries</span>
+                <h3 class="product-name">Fruit Pastry</h3>
+                <p>Fresh seasonal fruit, cream and flaky pastry.</p>
+                <div class="product-bottom"><strong class="product-price">₹120</strong><button class="add-btn" type="button"><i class="bi bi-cart-plus"></i> Add</button></div>
+            </div>
+        </article>
+
+        <!-- 36 -->
+        <article class="product-card cookies">
+            <img src="https://images.unsplash.com/photo-1499636136210-6f4ee915583e?auto=format&fit=crop&w=900&q=80" alt="Double Chocolate Cookies">
+            <div class="product-info">
+                <span class="product-category">Cookies</span>
+                <h3 class="product-name">Double Chocolate Cookies</h3>
+                <p>Fudgy cocoa cookies with dark chocolate pieces.</p>
+                <div class="product-bottom"><strong class="product-price">₹140</strong><button class="add-btn" type="button"><i class="bi bi-cart-plus"></i> Add</button></div>
+            </div>
+        </article>
+
+
+    </div>
+
+
+    <p id="noProducts"
+       class="no-products">
+
+        No products found.
+
+    </p>
+
+</section>
+
+
+
+<!-- FOOTER -->
+
+<footer class="footer">
+
+    <div class="footer-inner">
+
+        <div>
+
+            <h2>
+                ShabazBake
+            </h2>
+
+            <p>
+                Freshly baked happiness,
+                made with love.
+            </p>
+
+        </div>
+
+
+        <div class="footer-links">
+
+            <a href="menu.html">
+                Menu
+            </a>
+
+            <a href="about.html">
+                About
+            </a>
+
+            <a href="contact.html">
+                Contact
+            </a>
+
+            <a href="cart.html">
+                Cart
+            </a>
+
+        </div>
+
+
+        <div class="socials">
+
+            <a href="https://www.instagram.com/sabad._/"
+               target="_blank">
+
+                <i class="bi bi-instagram"></i>
+
+            </a>
+
+            <a href="#">
+                <i class="bi bi-facebook"></i>
+            </a>
+
+            <a href="#">
+                <i class="bi bi-youtube"></i>
+            </a>
+
+            <a href="#">
+                <i class="bi bi-whatsapp"></i>
+            </a>
+
+        </div>
+
+    </div>
+
+
+    <p class="copyright">
+
+        © 2026 ShabazBake.
+        All rights reserved.
+
+    </p>
+
+</footer>
+
+
+
+<script src="js/script.js"></script>
+
+</body>
+
+</html>
